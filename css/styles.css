@@ -45,12 +45,297 @@ button {
   border: 0;
   clip-path: inset(100%);
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* #endregion */
+
 /* #region header */
 
 header {
   background: #fff;
   box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
-  padding: 20px 0;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  padding: 20px 32px;
+  max-height: 80px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 365px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+  max-width: 213px;
+  max-height: 24px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+.logo-icon {
+}
+.nav-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 24px;
+  max-width: 320px;
+  max-height: 16px;
+}
+.nav-item {
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 14px;
+}
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+.social-link {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: row;
+  gap: 8px;
+  /* border: 1px solid rgba(17, 17, 17, 0.1); 
+  border-radius: 10px;
+  padding: 8px; */
+  width: 100%;
+  height: 100%;
+}
+/* #endregion */
+
+/* #region  hero*/
+
+.hero {
+  /* border-radius: 30px;
+
+  background: rgba(17, 17, 17, 0.4); */
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding: 381px 40px 40px;
+  gap: 32px;
+  max-width: 1136px;
+  max-height: 600px;
+  border-radius: 30px;
+  background: rgba(17, 17, 17, 0.4);
+}
+.hero-title {
+  max-width: 484px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hero-wrapper {
+  display: flex;
+  gap: 14px;
+}
+.btn {
+  gap: 14px;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 144px;
+  height: 45px;
+}
+.btn-accent {
+  background: #fd9222;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.btn-primary {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 183px;
+  height: 45px;
+  background: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.scroll-down {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 14px;
+  /* width: 130px;
+  height: 38px; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.scroll-img {
+}
+/* #endregion */
+
+/* #region benefits */
+
+.benefits {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-subtitle {
+}
+.benefits-text {
+}
+/* #endregion */
+
+/* #region ingridiens */
+
+.ingridiens {
+}
+.ingredients-title {
+}
+.ingredients-list {
+}
+.ingredients-item {
+}
+.ingredients-img {
+}
+.ingredients-subtitle {
+}
+/* #endregion */
+
+/* #region made */
+.made {
+}
+.made-title {
+}
+.made-img {
+}
+.made-subtitle {
+}
+.made-list {
+}
+.made-item {
+}
+/* #endregion */
+
+/* #region products */
+
+.products {
+}
+.products-title {
+}
+.products-list {
+}
+.products-item {
+}
+.products-img {
+}
+.products-subtitle {
+}
+.products-text {
+}
+.products-button {
+}
+/* #endregion */
+
+/* #region bestsellers */
+
+.bestsellers {
+}
+.bestsellers-title {
+}
+.bestsellers-list {
+}
+.bestsellers-item {
+}
+.bestsellers-img {
+}
+.bestsellers-subtitle {
+}
+/* #endregion */
+
+/* #region reviews */
+
+.reviews {
+}
+.reviews-title {
+}
+.reviews-list {
+}
+.reviews-item {
+}
+.reviews-img {
+}
+.reviews-subtitle {
+}
+.reviews-text {
+}
+.reviews-button {
+}
+/* #endregion */
+
+/* #region footer */
+
+.footer {
+}
+.footer-desc {
+}
+.footer-social {
+}
+.footer-caption {
+}
+.footer-social-list {
+}
+.footer-social-item {
+}
+.footer-social-link {
+}
+.footer-contacts {
+}
+.fotter-caption {
+}
+.fotter-contacts-list {
+}
+.fotter-contacts-item {
+}
+.footer-contacts-link {
+}
+.fotter-nav-list {
+}
+.fotter-nav-item {
+}
+.fotter-nav-link {
+}
+
 /* #endregion */
