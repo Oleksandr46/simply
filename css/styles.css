@@ -542,7 +542,7 @@ button {
 }
 .footer-caption {
 }
-.footer-contacts-list {
+.footer-contacts {
 }
 .footer-contacts-item {
 }
@@ -551,7 +551,11 @@ button {
   line-height: 1.28;
   letter-spacing: -0.02em;
 }
-.footer-nav-list {
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+.footer-nav {
   display: flex;
   gap: 24px;
 }
