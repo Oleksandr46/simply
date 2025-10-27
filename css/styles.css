@@ -219,10 +219,17 @@ button {
 }
 .hero-container {
   padding: 381px 40px 40px;
-
   max-width: 1136px;
   border-radius: 30px;
   background: rgba(17, 17, 17, 0.4);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url("../icons/hero/hero-bg_lg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   width: 484px;
