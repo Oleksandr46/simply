@@ -102,8 +102,28 @@ button {
   gap: 14px;
 }
 .social-item {
+  width: 40px;
+  height: 40px;
 }
 .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  color: #111;
+}
+.social-link:hover,
+.social-link:focus {
+  border-color: rgba(253, 146, 34, 0.1);
+  color: #fd9222;
+}
+.socials-icon {
+  fill: currentColor;
+  /* stroke: red;
+  stroke-width: 1px; */
 }
 
 /* Buttons */
@@ -200,6 +220,7 @@ button {
 .nav-item {
 }
 .nav-link {
+  position: relative;
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -209,6 +230,10 @@ button {
 }
 .nav-link::after {
   content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+
   display: block;
   width: 100%;
   height: 4px;
@@ -275,7 +300,31 @@ button {
   gap: 88px;
 }
 .benefits-item {
+  position: relative;
   width: 308px;
+}
+.benefits-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 0px;
+  height: 124px;
+  transform: translateY(-50%);
+}
+.benefits-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+}
+.benefits-icon {
 }
 .benefits-subtitle {
   font-weight: 600;
@@ -346,12 +395,27 @@ button {
 .made-title {
 }
 .made-left-side {
-}
-
-.made-img {
+  position: relative;
+  overflow: hidden;
   border-radius: 15px;
   max-width: 600px;
   max-height: 400px;
+}
+
+.made-img {
+  opacity: 0.6;
+}
+.made-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+.made-btn-icon {
+  fill: #f5f4f4;
 }
 .made-right-side {
   border-radius: 15px;
@@ -547,6 +611,15 @@ button {
 .footer-social {
   margin-right: 50px;
 }
+.footer-social .social-link {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+  border-color: rgba(253, 146, 34, 0.1);
+  color: #fd9222;
+}
 .footer-caption {
   font-weight: 500;
   font-size: 14px;
@@ -556,6 +629,7 @@ button {
 
 .social-item {
 }
+
 .footer-social-link {
 }
 .footer-contacts {

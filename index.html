@@ -40,8 +40,10 @@ of pure delight!"
       <div class="header-container container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
-            >SIMPLY CHOCOLATE <img class="logo-icon" src="./icons/chocolate.svg" alt="Simply Chocolate logo"
-          /></a>
+            >SIMPLY CHOCOLATE<svg class="logo-icon" width="24" height="24">
+            <use href="./icons/icons.svg#logo"></use>
+          </svg>
+        </a>
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
@@ -56,15 +58,35 @@ of pure delight!"
         </nav>
         <ul class="socials">
           <li class="social-item">
-            <a class="social-link" href="#"><img src="./icons/facebook.svg" alt="facebook logo" /></a>
+            <a class="social-link" 
+            href="https://www.facebook.com/"
+            targer="_blank"
+            rel="noopener no-referrer"
+            aria-label="Link to Facebok">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#"
-              ><img src="./icons/instagram.svg" alt="instagram logo"
-            /></a>
+            <a class="social-link"
+            href="https://www.instagram.com/"
+            targer="_blank"
+            rel="noopener no-referrer"
+            aria-label="Link to instagram">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./icons/icons.svg#instagram"></use>
+              </svg></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#"><img src="./icons/twitter.svg" alt="twitter logo" /></a>
+             <a class="social-link"
+             href="https://www.twitter.com/"
+            targer="_blank"
+            rel="noopener no-referrer"
+            aria-label="Link to twitter">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./icons/icons.svg#twitter"></use>
+              </svg></a>
           </li>
         </ul>
       </div>
@@ -82,7 +104,9 @@ of pure delight!"
             <button class="btn btn-primary" tupe="button">How it’s made</button>
             <a class="scroll-down" href="#benefits"
               >scroll down
-              <img class="scroll-img" src="./icons/arrow.svg" alt="Scroll down icon" />
+              <svg class="" width="38" height="38">
+                <use href="./icons/icons.svg#scroll-down"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -93,6 +117,12 @@ of pure delight!"
           <h2 class="visually-hidden">Simply Chocolate benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./icons/icons.svg#chocolate"></use>
+                </svg>
+              </div>
+
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-text"
                 >Crafted with the finest quality cocoa beans and a dedication to
@@ -102,6 +132,11 @@ of pure delight!"
               >
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./icons/icons.svg#coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-text"
                 >Indulge in high-quality chocolate without breaking the bank with
@@ -112,6 +147,11 @@ of pure delight!"
               >
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./icons/icons.svg#spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-text"
                 >We take pride in our own production process, ensuring that every
@@ -203,8 +243,15 @@ of pure delight!"
             <div class="made-left-side">
               <img class="made-img" src="./icons/image.jpg" 
               alt="How its made" 
-             
-              /></div>
+              width="600" 
+              height="400"
+              />
+            <button class="made-btn" type="button">
+              <svg class="made-btn-icon" width="44" height="44">
+              <use href="./icons/icons.svg#play"></use>
+            </svg>
+          </button>
+        </div>
             <div class="made-right-side">
               <h3 class="made-subtitle"
                 >Try our chocolates today and discover the perfect balance of
@@ -429,28 +476,36 @@ of pure delight!"
           <p class="footer-caption">Social networks</p>
           <ul class="footer-socials socials">
             <li class="social-item">
-              <a class="social-link" href="#"
-                target="_blank"
-                rel="noopener no-referrer"
-                aria-label="Link to Facebok">
-                <img class="footer-social-link" src="./icons/facebook.svg" alt="facebook logo"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="#"
-                target="_blank"
-                rel="noopener no-referrer"
-                aria-label="Link to Instagram"
-                  ><img class="footer-social-link" src="./icons/instagram.svg" alt="instagram logo"
-                /></a>
-              </li>
-              <li class="social-item">
-                <a class="social-link" href="#"
-                target="_blank"
-                rel="noopener no-referrer"
-                aria-label="Link to Twitter">
-                  <img class="footer-social-link" src="./icons/twitter.svg" alt="twitter logo" /></a>
-              </li>
+            <a class="social-link" 
+            href="https://www.facebook.com/"
+            targer="_blank"
+            rel="noopener no-referrer"
+            aria-label="Link to Facebok">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./icons/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link"
+            href="https://www.instagram.com/"
+            targer="_blank"
+            rel="noopener no-referrer"
+            aria-label="Link to instagram">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./icons/icons.svg#instagram"></use>
+              </svg></a>
+          </li>
+          <li class="social-item">
+             <a class="social-link"
+             href="https://www.twitter.com/"
+            targer="_blank"
+            rel="noopener no-referrer"
+            aria-label="Link to twitter">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./icons/icons.svg#twitter"></use>
+              </svg></a>
+          </li>
             </ul>
       </div>
         <addres class="footer-contacts">
