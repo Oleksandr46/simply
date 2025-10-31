@@ -114,6 +114,8 @@ button {
   width: 100%;
   height: 100%;
   color: #111;
+  transition: 300ms ease-in;
+  transition-property: color, border-color;
 }
 .social-link:hover,
 .social-link:focus {
@@ -141,6 +143,8 @@ button {
 .btn-accent {
   background: #fd9222;
   color: #fff;
+  transform: 300ms ease-in;
+  transition-property: color, background;
 }
 .btn-accent:hover,
 .btn-accent:focus {
@@ -151,6 +155,8 @@ button {
 .btn-primary {
   border: 1px solid #fff;
   color: #fff;
+  transform: 300ms ease-in;
+  transition-property: border-color, color;
 }
 
 .btn-primary:hover,
@@ -169,6 +175,8 @@ button {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  transform: 300ms ease-in;
+  transition-property: color;
 }
 .scroll-img {
 }
@@ -181,6 +189,8 @@ button {
   display: block;
   border: 1px solid #fd9222;
   margin: 0 auto;
+  transform: 300ms ease-in;
+  transition-property: background, color;
 }
 .reviews-btn:hover,
 .reviews-btn:focus {
@@ -227,6 +237,8 @@ button {
   line-height: 1.14;
   letter-spacing: -0.02em;
   padding: 32px 0;
+  transition: 300ms ease-in;
+  transition-property: color;
 }
 .nav-link::after {
   content: "";
@@ -520,17 +532,37 @@ button {
 
   border-radius: 15px 15px 0 0;
 }
-.bestseller-wrap {
+.bestsellers-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+.overlay {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
-  border-left: 1px solid rgba(17, 17, 17, 0.1);
-  border-right: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 0 0 15px 15px;
-  width: 368px;
-  height: 80px;
-  background: #fff;
+  position: absolute;
+  padding: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  font-size: 14px;
+  color: #fff;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0.1) 100%
+  );
+  transform: translateY(100%);
+  transition: 300ms ease-in-out;
+  transition-property: transform;
+}
+.bestsellers-item:hover .overlay {
+  transform: translateY(0);
 }
 .bestsellers-subtitle {
   font-weight: 600;
@@ -538,7 +570,14 @@ button {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+  background: #fff;
+  padding: 28px;
 }
+
 /* #endregion */
 
 /* #region reviews */
@@ -614,6 +653,8 @@ button {
 .footer-social .social-link {
   border-color: rgba(255, 255, 255, 0.1);
   color: #fff;
+  transform: 300ms ease-in;
+  transition-property: color, border-color;
 }
 .footer-social .social-link:hover,
 .footer-social .social-link:focus {
