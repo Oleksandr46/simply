@@ -143,7 +143,7 @@ button {
 .btn-accent {
   background: #fd9222;
   color: #fff;
-  transform: 300ms ease-in;
+  transition: 300ms ease-in;
   transition-property: color, background;
 }
 .btn-accent:hover,
@@ -155,7 +155,7 @@ button {
 .btn-primary {
   border: 1px solid #fff;
   color: #fff;
-  transform: 300ms ease-in;
+  transition: 300ms ease-in;
   transition-property: border-color, color;
 }
 
@@ -164,34 +164,41 @@ button {
   border: 1px solid #fd9222;
   color: #fd9222;
 }
+
 .scroll-down {
   display: inline-flex;
   align-items: center;
   margin-left: auto;
   gap: 14px;
 
+  color: #fff;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: #fff;
-  transform: 300ms ease-in;
+  transition: 300ms ease-in;
   transition-property: color;
 }
-.scroll-img {
-}
+
 .scroll-down:hover,
 .scroll-down:focus {
   color: #fd9222;
 }
 
+.scroll-down:hover > .scroll-down-icon,
+.scroll-down:focus > .scroll-down-icon {
+  --color1: #fd9222;
+  --color2: #fff;
+}
+
 .reviews-btn {
-  display: block;
+  display: flex;
   border: 1px solid #fd9222;
   margin: 0 auto;
-  transform: 300ms ease-in;
+  transition: 300ms ease-in;
   transition-property: background, color;
 }
+
 .reviews-btn:hover,
 .reviews-btn:focus {
   background: #fd9222;
@@ -366,6 +373,7 @@ button {
   gap: 32px;
 }
 .ingridient-item {
+  position: relative;
   width: calc((100% - 3 * 32px) / 4);
   padding: 28px 23px;
   border-radius: 15px;
@@ -395,6 +403,17 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+.ingridiens-arrow {
+  position: absolute;
+  fill: transparent;
+  stroke: #fafafa;
+  top: 14px;
+  right: 14px;
+}
+.ingridient-item:nth-child(2n) .ingridiens-arrow {
+  stroke: #fd9222;
+}
+
 /* #endregion */
 
 /* #region made */
@@ -591,7 +610,7 @@ button {
 .reviews-list {
   display: flex;
   gap: 28px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 .reviews-item {
   position: relative;
@@ -606,7 +625,7 @@ button {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-48px);
+  transform: translateX(-50%) translateY(-42px);
 }
 .reviews-subtitle {
   text-align: center;
