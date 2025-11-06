@@ -166,7 +166,7 @@ of pure delight!"
       <!-- ingridiens section -->
       <section class="ingridient">
         <div class="container">
-          <h2 class="section-title ingredient-title">It all adds up to one exceptional <span class="section-title-accent">taste</span> sensation</h2>
+          <h2 class="section-title ingredient-title">It all adds up to one exceptional <span class="title-accent">taste</span> sensation</h2>
           <ul class="ingridient-list">
             <li class="ingridient-item">
               <img class="ingridient-img"
@@ -259,7 +259,7 @@ of pure delight!"
       <!-- made section -->
       <section class="made" id="made">
         <div class="container">
-          <h2 class="section-title made-title">How it’s <span class="section-title-accent">made</span>?</h2>
+          <h2 class="section-title made-title">How it’s <span class="title-accent">made</span>?</h2>
           <div class="made-wrraper">
             <div class="made-left-side">
               <img class="made-img" src="./icons/image.jpg" 
@@ -303,7 +303,7 @@ of pure delight!"
       <!-- products section -->
       <section class="products">
         <div class="container">
-          <h2 class="section-title products-title">Our <span class="section-title-accent">products</span></h2>
+          <h2 class="section-title products-title">Our <span class="title-accent">products</span></h2>
           <ul class="products-list">
             <li class="products-item">
               <img class="products-img"
@@ -399,7 +399,7 @@ of pure delight!"
       <!-- Bestsellers section -->
       <section class="bestsellers">
         <div class="container">
-          <h2 class="section-title bestsellers-title"><span class="section-title-accent">Top</span> sellers</h2>
+          <h2 class="section-title bestsellers-title"><span class="title-accent">Top</span> sellers</h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
               <div class="bestsellers-wrapper">
@@ -443,7 +443,7 @@ of pure delight!"
       <!-- reviews section -->
       <section class="reviews" id="reviews">
         <div class="container">
-          <h2 class="section-title reviews-title"><span class="section-title-accent">Chocolate</span> is loved</h2>
+          <h2 class="section-title reviews-title"><span class="title-accent">Chocolate</span> is loved</h2>
           <ul class="reviews-list">
             <li class="reviews-item">
               <img class="reviews-avatar"
@@ -488,14 +488,14 @@ of pure delight!"
               >
             </li>
           </ul>
-          <button class="btn reviews-btn" type="button">Leave a review</button>
+          <button class="btn reviews-btn js-open-modal" type="button">Leave a review</button>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
-        <p class="footer-slogan"><span class="section-title-accent">Chocolate</span> a delicious cure for a bad day</p>
+        <p class="footer-slogan"><span class="title-accent">Chocolate</span> a delicious cure for a bad day</p>
         <div class="footer-social">
           <p class="footer-caption">Social networks</p>
           <ul class="footer-socials socials">
@@ -562,15 +562,15 @@ of pure delight!"
 
 
     <!-- Modal window -->
-     <div class="modal-overlay">
+     <div class="modal-overlay is-open js-modal">
       <div class="modal">
 
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn js-close-modal" type="button">
           <svg class="close-icon" width="28" height="28">
             <use href="./icons/icons.svg#close"></use>
           </svg>
         </button>
-          <p class="modal-caption">LEAVE A REVIEW ABOUT <spam class="section-title-accent">OUR CHOCOLATE</spam></p>
+          <p class="modal-caption">LEAVE A REVIEW ABOUT <spam class="title-accent">OUR CHOCOLATE</spam></p>
           <form class="modal-form" name=""review>
             <div class="modal-form-field">
               <label class="modal-form-label" for="user-name">Name</label>
@@ -579,10 +579,21 @@ of pure delight!"
                 class="modal-form-input"
                 type="text"
                 id="user-name"
-                name="user-name"/>
+                name="user-name"
+                minlength="3"
+                required
+                pattern="[a-z][A-Z]"
+                title="Please switch to english"
+                placeholder="Name"
+                
+                />
                 <svg class="modal-form-icon" width="24" height="24">
                   <use href="./icons/icons.svg#user"></use>
                 </svg>
+                <svg class="error-icon" width="24" height="24">
+                  <use href="./icons/icons.svg#vector"></use>
+                </svg>
+              </div>
               </div>
               <div class="modal-form-field">
               <label class="modal-form-label" for="user-email">Email</label>
@@ -591,10 +602,15 @@ of pure delight!"
                 class="modal-form-input"
                 type="email"
                 id="user-email"
-                name="user-email"/>
+                name="user-email"
+                required
+                placeholder="name@gmail.com"
+                />
+                
                 <svg class="modal-form-icon" width="24" height="24">
                   <use href="./icons/icons.svg#email"></use>
                 </svg>
+              </div>
               </div>
               <div class="modal-form-field">
               <label class="modal-form-label" for="user-phone">Pone number</label>
@@ -603,20 +619,48 @@ of pure delight!"
                 class="modal-form-input"
                 type="tel"
                 id="user-phone"
-                name="user-phone"/>
+                name="user-phone"
+                placeholder="+48698256325"
+                />
+                
                 <svg class="modal-form-icon" width="24" height="24">
                   <use href="./icons/icons.svg#phone"></use>
                 </svg>
               </div>
-              <div class="modal-form-wrapper">
-                <label class="modal-form-label" for="">Comment</label>
-                <textarea name="" id=""></textarea>
               </div>
+              <div class="modal-form-field">
+                <label class="modal-form-label" for="user-message">Comment</label>
+                <textarea 
+                class="modal-from-message"
+                name="user-message" 
+                id="user-message" 
+                placeholder="Enter text"
+                minlength="20"
+                maxlength="250"
+                ></textarea>
+              </div>
+              
+              <div class="modal-form-angreement">
+                <input 
+                class="visually-hidden" 
+                type="checkbox" 
+                name="user-agreement" 
+                id="user-agreement">
+                <label class="modal-form-agreement-text" for="user-agreement">
+                  <span class="modal-form-checkbox">
+                    <svg class="modal-form-checkbox-icon" width="10" height="10">
+                      <use href="./icons/icons.svg#checked"></use>
+                    </svg>
+                  </span>
+                  I accept the terms and conditions of the 
+                  <a href="#" class="modal-form-agreement-link" target="_blank">Privacy Policy</a>
+                </label>
+              </div>
+              <button class="btn btn-accent" type="submit">Send</button>
             </div>
           </form>
       </div>
-
-      
      </div>
+     <script src="./js/index.js"></script>
   </body>
 </html>
