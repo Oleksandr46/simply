@@ -582,7 +582,6 @@ of pure delight!"
                 name="user-name"
                 minlength="3"
                 required
-                pattern="[a-z][A-Z]"
                 title="Please switch to english"
                 placeholder="Name"
                 
@@ -593,6 +592,7 @@ of pure delight!"
                 <svg class="error-icon" width="24" height="24">
                   <use href="./icons/icons.svg#vector"></use>
                 </svg>
+                <span class="error-msg">Min name length 3 chars</span>
               </div>
               </div>
               <div class="modal-form-field">
@@ -610,6 +610,10 @@ of pure delight!"
                 <svg class="modal-form-icon" width="24" height="24">
                   <use href="./icons/icons.svg#email"></use>
                 </svg>
+                 <svg class="error-icon" width="24" height="24">
+                  <use href="./icons/icons.svg#vector"></use>
+                </svg>
+                <span class="error-msg">Please write the correct format </span>
               </div>
               </div>
               <div class="modal-form-field">
@@ -621,11 +625,13 @@ of pure delight!"
                 id="user-phone"
                 name="user-phone"
                 placeholder="+48698256325"
+                required
                 />
                 
                 <svg class="modal-form-icon" width="24" height="24">
                   <use href="./icons/icons.svg#phone"></use>
                 </svg>
+                 
               </div>
               </div>
               <div class="modal-form-field">
