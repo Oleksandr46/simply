@@ -80,9 +80,25 @@ button {
   clip-path: inset(100%);
 }
 .container {
-  max-width: 1168px;
-  padding: 0 16px;
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  /* max-width: 1168px;
+  
+   */
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+  }
 }
 /* logo */
 .logo {
