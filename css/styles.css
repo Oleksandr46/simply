@@ -710,6 +710,8 @@ button {
   margin-bottom: 4px;
 }
 .footer-bottom {
+  display: flex;
+  align-items: center;
   padding-top: 24px;
 }
 .footer-nav {
@@ -734,6 +736,34 @@ button {
 .footer-nav-link:focus {
   color: #fd9222;
 }
+
+.footer-input {
+  display: flex;
+  margin-left: auto;
+  gap: 8px;
+}
+.label-outer {
+  transition-property: border;
+}
+.input-outer {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 13px 24px;
+  min-width: 313px;
+  background: #1e1823;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  color: #fff;
+  transition: 300ms;
+}
+.input-outer::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-Subscribe {
+}
+
 /* #endregion */
 
 /* #region madal window */
