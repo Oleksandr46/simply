@@ -40,7 +40,7 @@ of pure delight!"
       <div class="header-container container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
-            >SIMPLY CHOCOLATE<svg class="logo-icon" width="24" height="24">
+            >SIMPLY CHOCOLATE<svg class="logo-icon" width="21" height="21">
             <use href="./icons/icons.svg#logo"></use>
           </svg>
         </a>
@@ -89,6 +89,9 @@ of pure delight!"
               </svg></a>
           </li>
         </ul>
+        <svg class="mobile-menu" width="28" height="28">
+          <use href="./icons/icons.svg#mobile-menu"></use>
+        </svg>
       </div>
     </header>
     <main class="main">
@@ -100,11 +103,13 @@ of pure delight!"
             of pure delight!</h1
           >
           <div class="hero-wrapper">
-            <button class="btn btn-accent" type="button">Buy now</button>
-            <button class="btn btn-primary" tupe="button">How it’s made</button>
+            <div class="button-hero">
+              <button class="btn btn-accent " type="button">Buy now</button>
+              <button class="btn btn-primary" tupe="button">How it’s made</button>
+            </div>
             <a class="scroll-down" href="#benefits"
               >scroll down
-              <svg class="scroll-down-icon" width="38" height="38">
+              <svg class="scroll-down-icon" width="28" height="28">
                 <use href="./icons/icons.svg#arrow-down"></use>
               </svg>
             </a>
@@ -312,8 +317,10 @@ of pure delight!"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Orange </h3>
-              <p class="products-text">Dark chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Orange </h3>
+                <p class="products-text">Dark chocolate</p>
+              </div>
               <button class="products-button" type="button">45 UAH</button>
             </li>
             <li class="products-item">
@@ -397,7 +404,7 @@ of pure delight!"
         </div>
       </section>
       <!-- Bestsellers section -->
-      <section class="bestsellers">
+      <section class="bestsellers hiden">
         <div class="container">
           <h2 class="section-title bestsellers-title"><span class="title-accent">Top</span> sellers</h2>
           <ul class="bestsellers-list">
@@ -441,7 +448,7 @@ of pure delight!"
         </div>
       </section>
       <!-- reviews section -->
-      <section class="reviews" id="reviews">
+      <section class="reviews hiden" id="reviews">
         <div class="container">
           <h2 class="section-title reviews-title"><span class="title-accent">Chocolate</span> is loved</h2>
           <ul class="reviews-list">
@@ -492,7 +499,7 @@ of pure delight!"
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hiden">
       <div class="container">
         <div class="footer-top">
         <p class="footer-slogan"><span class="title-accent">Chocolate</span> a delicious cure for a bad day</p>
@@ -579,7 +586,7 @@ of pure delight!"
 
 
     <!-- Modal window -->
-     <div class="modal-overlay is-open js-modal">
+     <div class="modal-overlay is-open js-modal hiden">
       <div class="modal">
 
         <button class="modal-close-btn js-close-modal" type="button">
