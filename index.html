@@ -103,10 +103,8 @@ of pure delight!"
             of pure delight!</h1
           >
           <div class="hero-wrapper">
-            <div class="button-hero">
               <button class="btn btn-accent " type="button">Buy now</button>
               <button class="btn btn-primary" tupe="button">How it’s made</button>
-            </div>
             <a class="scroll-down" href="#benefits"
               >scroll down
               <svg class="scroll-down-icon" width="28" height="28">
@@ -174,12 +172,16 @@ of pure delight!"
           <h2 class="section-title ingredient-title">It all adds up to one exceptional <span class="title-accent">taste</span> sensation</h2>
           <ul class="ingridient-list">
             <li class="ingridient-item">
-              <img class="ingridient-img"
+
+               <img class="ingridient-img"
+               srcset="./icons/ingridiens/img-1-min.png 1x,
+               ./icons/ingridiens/img-1_@2x-min.png 2x"
+
                 src="./icons/ingridiens/img-1-min.png"
-                alt=""
-                width="214"
-                height="160"
-              />
+                alt="MILK CHOCOLATE"
+                width="236"
+                height="176"
+                />
               <h3 class="ingridient-subtitle">MILK CHOCOLATE</h3>
               <svg class="ingridiens-arrow" width="24" height="24">
                 <use href="./icons/icons.svg#arrow"></use>
@@ -187,8 +189,11 @@ of pure delight!"
             </li>
             <li class="ingridient-item">
               <img class="ingridient-img"
+              srcset="./icons/ingridiens/img-2-min.png 1x,
+               ./icons/ingridiens/img-2_@2x-min.png 2x"
+
                 src="./icons/ingridiens/img-2-min.png"
-                alt=""
+                alt="MILK"
                 width="214"
                 height="160"
               />
@@ -199,8 +204,11 @@ of pure delight!"
             </li>
             <li class="ingridient-item">
               <img class="ingridient-img"
+              srcset="./icons/ingridiens/img-3-min.png 1x,
+               ./icons/ingridiens/img-3_@2x-min.png 2x"
+
                 src="./icons/ingridiens/img-3-min.png"
-                alt=""
+                alt="NUTS"
                 width="214"
                 height="160"
               />
@@ -211,8 +219,11 @@ of pure delight!"
             </li>
             <li class="ingridient-item">
               <img class="ingridient-img"
+              srcset="./icons/ingridiens/img-4-min.png 1x,
+               ./icons/ingridiens/img-4_@2x-min.png 2x"
+
                 src="./icons/ingridiens/img-4-min.png"
-                alt=""
+                alt="SEMI - SWEET CHOCOLATE"
                 width="214"
                 height="160"
               />
@@ -223,8 +234,11 @@ of pure delight!"
             </li>
             <li class="ingridient-item">
               <img class="ingridient-img"
+              srcset="./icons/ingridiens/img-5-min.png 1x,
+               ./icons/ingridiens/img-5_@2x-min.png 2x"
+
                 src="./icons/ingridiens/img-5-min.png"
-                alt=""
+                alt="CACAO"
                 width="214"
                 height="160"
               />
@@ -235,8 +249,11 @@ of pure delight!"
             </li>
             <li class="ingridient-item">
               <img class="ingridient-img"
+              srcset="./icons/ingridiens/img-6-min.png 1x,
+               ./icons/ingridiens/img-6_@2x-min.png 2x"
+
                 src="./icons/ingridiens/img-6-min.png"
-                alt=""
+                alt="RASPBERRY"
                 width="214"
                 height="160"
               />
@@ -247,8 +264,11 @@ of pure delight!"
             </li>
             <li class="ingridient-item">
               <img class="ingridient-img"
+              srcset="./icons/ingridiens/img-7-min.png 1x,
+               ./icons/ingridiens/img-7_@2x-min.png 2x"
+
                 src="./icons/ingridiens/img-7-min.png"
-                alt=""
+                alt="COCONUT OIL"
                 width="214"
                 height="160"
               />
@@ -267,11 +287,26 @@ of pure delight!"
           <h2 class="section-title made-title">How it’s <span class="title-accent">made</span>?</h2>
           <div class="made-wrraper">
             <div class="made-left-side">
-              <img class="made-img" src="./icons/image.jpg" 
+              <picture>
+                 <source
+                media="(min-width: 736px)"
+                srcset="./icons/made/image_tab.jpg 1x, 
+                ./icons/made/image_tab@2x.jpg 2x"
+                />
+
+                <source
+                media="(max-width: 735px)"
+                srcset="./icons/made/image_mob.jpg 1x, 
+                ./icons/made/image_mob@2x.jpg 2x"
+                />
+
+                <img class="made-img" src="./icons/made/image_mob.jpg" 
               alt="How its made" 
               width="600" 
               height="400"
               />
+              </picture>
+              
             <button class="made-btn" type="button">
               <svg class="made-btn-icon" width="44" height="44">
               <use href="./icons/icons.svg#play"></use>
@@ -312,8 +347,10 @@ of pure delight!"
           <ul class="products-list">
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-1.jpg 1x, 
+              ./icons/products/img-1@2x.jpg 2x"
                 src="./icons/products/img-1.jpg"
-                alt=""
+                alt="Orange"
                 width="230"
                 height="201"
               />
@@ -325,86 +362,114 @@ of pure delight!"
             </li>
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-2.jpg 1x, 
+              ./icons/products/img-2@2x.jpg 2x"
                 src="./icons/products/img-2.jpg"
-                alt=""
+                alt="Apple&Cranberry"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Apple&Cranberry</h3>
-              <p class="products-text">Milk chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Apple&Cranberry</h3>
+                <p class="products-text">Milk chocolate</p>
+              </div>
               <button class="products-button" type="button">50 UAH</button>
             </li>
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-3.jpg 1x, 
+              ./icons/products/img-3@2x.jpg 2x"
                 src="./icons/products/img-3.jpg"
-                alt=""
+                alt="Lime&Sea salt"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Lime&Sea salt</h3>
-              <p class="products-text">Dark chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Lime&Sea salt</h3>
+                <p class="products-text">Dark chocolate</p>
+              </div>
               <button class="products-button" type="button">66 UAH</button>
             </li>
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-4.jpg 1x, 
+              ./icons/products/img-4@2x.jpg 2x"
                 src="./icons/products/img-4.jpg"
-                alt=""
+                alt="Pineapple"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Pineapple</h3>
-              <p class="products-text">Dark chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Pineapple</h3>
+                <p class="products-text">Dark chocolate</p>
+              </div>
               <button class="products-button" type="button">54 UAH</button>
             </li>
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-5.jpg 1x, 
+              ./icons/products/img-5@2x.jpg 2x"
                 src="./icons/products/img-5.jpg"
-                alt=""
+                alt="Classic"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Classic</h3>
-              <p class="products-text">Milk chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Classic</h3>
+                <p class="products-text">Milk chocolate</p>
+              </div>
               <button class="products-button" type="button">45 UAH</button>
             </li>
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-6.jpg 1x, 
+              ./icons/products/img-6@2x.jpg 2x"
                 src="./icons/products/img-6.jpg"
-                alt=""
+                alt="Honey"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Honey</h3>
-              <p class="products-text">Milk chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Honey</h3>
+                <p class="products-text">Milk chocolate</p>
+              </div>
               <button class="products-button" type="button">50 UAH</button>
             </li>
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-7.jpg 1x, 
+              ./icons/products/img-7@2x.jpg 2x"
                 src="./icons/products/img-7.jpg"
-                alt=""
+                alt="Roasted fruits"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Roasted fruits</h3>
-              <p class="products-text">Dark chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Roasted fruits</h3>
+                <p class="products-text">Dark chocolate</p>
+              </div>
               <button class="products-button" type="button">66 UAH</button>
             </li>
             <li class="products-item">
               <img class="products-img"
+              srcset="./icons/products/img-8.jpg 1x, 
+              ./icons/products/img-8@2x.jpg 2x"
                 src="./icons/products/img-8.jpg"
-                alt=""
+                alt="Classic"
                 width="230"
                 height="201"
               />
-              <h3 class="products-subtitle">Classic</h3>
-              <p class="products-text">White chocolate</p>
+              <div class="products-wrapper">
+                <h3 class="products-subtitle">Classic</h3>
+                <p class="products-text">White chocolate</p>
+              </div>
               <button class="products-button" type="button">54 UAH</button>
             </li>
           </ul>
         </div>
       </section>
       <!-- Bestsellers section -->
-      <section class="bestsellers hiden">
+      <section class="bestsellers">
         <div class="container">
           <h2 class="section-title bestsellers-title"><span class="title-accent">Top</span> sellers</h2>
           <ul class="bestsellers-list">
