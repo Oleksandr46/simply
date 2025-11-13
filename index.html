@@ -56,7 +56,7 @@ of pure delight!"
             </li>
           </ul>
         </nav>
-        <ul class="socials">
+        <ul class="heder-socials socials">
           <li class="social-item">
             <a class="social-link" 
             href="https://www.facebook.com/"
@@ -89,7 +89,7 @@ of pure delight!"
               </svg></a>
           </li>
         </ul>
-        <svg class="mobile-menu" width="28" height="28">
+        <svg class="mobile-menu-icon" width="28" height="28">
           <use href="./icons/icons.svg#mobile-menu"></use>
         </svg>
       </div>
@@ -104,7 +104,7 @@ of pure delight!"
           >
           <div class="hero-wrapper">
               <button class="btn btn-accent " type="button">Buy now</button>
-              <button class="btn btn-primary" tupe="button">How it’s made</button>
+              <button class="btn btn-primary" type="button">How it’s made</button>
             <a class="scroll-down" href="#benefits"
               >scroll down
               <svg class="scroll-down-icon" width="28" height="28">
@@ -476,6 +476,7 @@ of pure delight!"
             <li class="bestsellers-item">
               <div class="bestsellers-wrapper">
                 <img class="bestsellers-img"
+              
                   src="./icons/sellers/img-1.jpg"
                   alt="chocolate nuts image"
                   width="362"
@@ -488,6 +489,7 @@ of pure delight!"
             <li class="bestsellers-item">
               <div class="bestsellers-wrapper">
               <img class="bestsellers-img"
+             
                 src="./icons/sellers/img-2.jpg"
                 alt="chocolate fruits image"
                 width="362"
@@ -500,6 +502,7 @@ of pure delight!"
             <li class="bestsellers-item">
               <div class="bestsellers-wrapper">
               <img class="bestsellers-img"
+             
                 src="./icons/sellers/img-3.jpg"
                 alt="chocolate dark image"
                 width="362"
@@ -519,7 +522,9 @@ of pure delight!"
           <ul class="reviews-list">
             <li class="reviews-item">
               <img class="reviews-avatar"
-                src="./icons/reviews/img-1.png"
+              srcset="./icons/reviews/image-min.png 1x,
+              ./icons/reviews/image@2x-min.png 2x"
+                src="./icons/reviews/image-min.png"
                 alt="image of Victoria Dobrzhanska"
                 width="80"
                 height="80"
@@ -533,7 +538,9 @@ of pure delight!"
             </li>
             <li class="reviews-item">
               <img class="reviews-avatar"
-                src="./icons/reviews/img-2.png"
+              srcset="./icons/reviews/Ellipse-min.png 1x,
+              ./icons/reviews/Ellipse@2x-min.png 1\2x"
+                src="./icons/reviews/Ellipse-min.png"
                 alt="image of Nazar Babenko"
                 width="80"
                 height="80"
@@ -547,7 +554,9 @@ of pure delight!"
             </li>
             <li class="reviews-item">
               <img class="reviews-avatar"
-                src="./icons/reviews/img-3.png"
+              srcset="./icons/reviews/Ellipse-1-min.png 1x,
+              ./icons/reviews/Ellipse@2x-1-min.png 2x"
+                src="./icons/reviews/Ellipse-1-min.png"
                 alt="image of Olena Kampusch"
                 width="80"
                 height="80"
@@ -759,6 +768,64 @@ of pure delight!"
           </form>
       </div>
      </div>
+
+     <!-- mobile menu -->
+      
+        <div class="mobile-menu is-open">
+           <button class="modal-close-btn js-close-modal" type="button">
+            <svg class="menu-close" width="28" height="28">
+              <use href="./icons/icons.svg#close"></use>
+            </svg>
+          </button>
+         <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-link" href="#home">Home</a>
+              </li class="menu-item">
+              <li>
+                <a class="menu-link" href="#made">How it’s made?</a>
+              </li class="menu-item">
+              <li>
+                <a class="menu-link" href="#reviews">Chocolate is loved</a>
+              </li>
+            </ul>
+        
+          <ul class="mobile-menu-socials socials">
+            <li class="social-item">
+              <a class="social-link"
+              href="https://www.facebook.com/"
+              targer="_blank"
+              rel="noopener no-referrer"
+              aria-label="Link to Facebok">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./icons/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link"
+              href="https://www.instagram.com/"
+              targer="_blank"
+              rel="noopener no-referrer"
+              aria-label="Link to instagram">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./icons/icons.svg#instagram"></use>
+                </svg></a>
+            </li>
+            <li class="social-item">
+               <a class="social-link"
+               href="https://www.twitter.com/"
+              targer="_blank"
+              rel="noopener no-referrer"
+              aria-label="Link to twitter">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./icons/icons.svg#twitter"></use>
+                </svg></a>
+            </li>
+          </ul>
+          
+        </div>
+        
+      
      <script src="./js/index.js"></script>
   </body>
 </html>
